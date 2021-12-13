@@ -6,7 +6,7 @@ var express= require('express'),
 
 
 //App config
-mongoose.connect('mongodb+srv://hari:hari@cluster0.qzlre.mongodb.net/rest_blog_app?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://hari:@cluster0.qzlre.mongodb.net/?retryWrites=true&w=majority');
 app.set('view engine','ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}));
